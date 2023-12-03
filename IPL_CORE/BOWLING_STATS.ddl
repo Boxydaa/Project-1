@@ -1,0 +1,17 @@
+CREATE OR REPLACE TABLE BOWLING_STATS(
+match_id	NUMBER(38,0),
+innings	INTEGER,
+team	VARCHAR(20),
+opposition	VARCHAR(20),
+bowler_id	NUMBER(38,0),
+overs	DECIMAL(10,1),
+balls	INTEGER,
+maidens	NUMBER(38,0),
+conceded	NUMBER(38,0),
+wickets	INTEGER,
+economy	DECIMAL(10,2),
+dots	INTEGER,
+fours	INTEGER,
+sixes	INTEGER,
+wides	INTEGER,
+noballs INTEGER);
