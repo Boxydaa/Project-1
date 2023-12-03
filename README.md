@@ -1,13 +1,22 @@
 # Project-1
-My First Data engineering project.
+# "Data Transformation Project: AWS S3, Snowflake, and Python"
 
+Executed a comprehensive project focused on mastering Extract, Transform, and Load (ETL) techniques, with a practical emphasis on AWS S3, IAM, Snowflake, and Python. The project's core objective was to develop a foundational understanding of these technologies through hands-on implementation.
 
-In this project i have got the source data from kaggle.
-The objective of the project is to understand the extract ,transform and load techniques in a basic way,along with handson on AWS S3,IAM and Snowflake and Python .
-1.I created a S3 bucket using aws and uploaded the cv files in my bucket.
-2.I created a snowflake database called IPL_APP.
-  -- In that database IPL_CORE schema was created where i had 7 core tables where the raw data from csv file is loaded.
-  -- Stats schema was created.
-3.An external stage was created pointing to my S3 bucket.
-4.I loaded the raw data from stage to core tables.
-5.I used the python script to load the transformed data into two tables BATTING_STATS and BOWLING_STATS.
+# AWS S3 Infrastructure:
+-- Established a dedicated AWS S3 bucket to house source data procured from Kaggle, consisting of CV files.
+
+# Snowflake Database Architecture:
+-- Configured a Snowflake database named IPL_APP.
+-- Designed and implemented the IPL_CORE schema within the database, comprising 7 core tables for the systematic storage of raw data extracted from CSV files.
+-- Introduced a Stats schema to facilitate subsequent data processing.
+
+# External Stage Integration:
+-- Implemented an external stage within Snowflake, seamlessly interfacing with the designated S3 bucket. This integration ensured efficient data flow between Snowflake and the source data residing in AWS S3.
+
+# Data Loading Methodology:
+-- Orchestrated a robust data loading process, transporting raw data from the external stage to predefined core tables within the IPL_CORE schema.
+
+# Python Scripting for Transformation:
+-- Employed Python scripting for data transformation, customizing the script to align with project specifications.
+-- Executed successful loading of transformed data into distinct tables, specifically BATTING_STATS and BOWLING_STATS, augmenting data organization and analytical capabilities.
