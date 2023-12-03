@@ -1,0 +1,12 @@
+create or replace table IPL_APP.STATS.PLAYER_TEAMS (
+PLAYER_ID NUMBER(38,0),
+PLAYER_NAME VARCHAR(50),
+TEAM_NAME VARCHAR(100)
+);
+
+insert into IPL_APP.STATS.PLAYER_TEAMS (PLAYER_ID,PLAYER_NAME,TEAM_NAME)
+select distinct p.player_id,p.player_name,b.team
+from IPL_APP.IPL_CORE.BATTING_STATS b
+join IPL_APP.IPL_CORE.PLAYER_INFO p 
+on p.player_id=b.batsman_id
+group by p.player_id,p.player_name,b.batsman_id,b.team;
