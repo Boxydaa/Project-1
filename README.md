@@ -1,6 +1,10 @@
 # Project-1
 # "Data Transformation Project: AWS S3, Snowflake, and Python"
 
+![IPL_DATA_FLOW](https://github.com/Boxydaa/Project-1/assets/152782315/ba525206-9157-4160-8dc8-d49b87c83afb)
+
+
+
 Executed a comprehensive project focused on mastering Extract, Transform, and Load (ETL) techniques, with a practical emphasis on AWS S3, IAM, Snowflake, and Python. The project's core objective was to develop a foundational understanding of these technologies through hands-on implementation.
 
 # AWS S3 Infrastructure:
